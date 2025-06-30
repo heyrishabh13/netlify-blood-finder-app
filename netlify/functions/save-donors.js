@@ -2,6 +2,7 @@ const fs = require("fs").promises;
 
 exports.handler = async (event, context) => {
   try {
+    console.log("save-donors started");
     const {
       fullName,
       age,

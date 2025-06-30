@@ -2,6 +2,7 @@ const fs = require("fs").promises;
 
 exports.handler = async (event, context) => {
   try {
+    console.log("get-donors started");
     const donors = JSON.parse(await fs.readFile("./data.json", "utf8"));
     return {
       statusCode: 200,
