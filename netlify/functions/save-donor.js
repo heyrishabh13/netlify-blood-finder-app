@@ -1,9 +1,9 @@
 const fs = require("fs").promises;
 
 exports.handler = async (event, context) => {
-  console.log("event", event);
   try {
     console.log("save-donors started");
+    console.log("event.body", event.body);
     const {
       fullName,
       age,
